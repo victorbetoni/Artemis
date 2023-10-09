@@ -46,6 +46,7 @@ import com.wynntils.features.commands.AddCommandExpansionFeature;
 import com.wynntils.features.commands.CommandAliasesFeature;
 import com.wynntils.features.commands.CustomCommandKeybindsFeature;
 import com.wynntils.features.commands.FilterAdminCommandsFeature;
+import com.wynntils.features.consumables.ConsumablesSearchFeature;
 import com.wynntils.features.debug.AbilityTreeDataDumpFeature;
 import com.wynntils.features.debug.ConnectionProgressFeature;
 import com.wynntils.features.debug.ContentBookDumpFeature;
@@ -228,6 +229,7 @@ public final class FeatureManager extends Manager {
 
         // region inventory
         registerFeature(new ContainerSearchFeature());
+        registerFeature(new ConsumablesSearchFeature());
         registerFeature(new CustomBankPageNamesFeature());
         registerFeature(new CustomBankQuickJumpsFeature());
         registerFeature(new DurabilityArcFeature());
